@@ -1,0 +1,293 @@
+Apr 09 11:29:36 DESKTOP-235VIH4  11:29:35.758  INFO [devops,,] 24836 --- [  restartedMain] c.i.projeto.devops.DevopsApplication     : Starting DevopsApplication using Java 11.0.12 on DESKTOP-235VIH4 with PID 24836 (C:\Users\JulioSilva\Documents\INFNET\devops\target\classes started by JulioSilva in C:\Users\JulioSilva\Documents\INFNET\devops)  
+Apr 09 11:29:36 DESKTOP-235VIH4  11:29:35.769  INFO [devops,,] 24836 --- [  restartedMain] c.i.projeto.devops.DevopsApplication     : No active profile set, falling back to 1 default profile: "default"  
+Apr 09 11:29:36 DESKTOP-235VIH4  11:29:35.840  INFO [devops,,] 24836 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable  
+Apr 09 11:29:36 DESKTOP-235VIH4  11:29:35.840  INFO [devops,,] 24836 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'  
+Apr 09 11:29:38 DESKTOP-235VIH4  11:29:37.950  INFO [devops,,] 24836 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.  
+Apr 09 11:29:38 DESKTOP-235VIH4  11:29:38.029  INFO [devops,,] 24836 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interfaces.  
+Apr 09 11:29:39 DESKTOP-235VIH4  11:29:38.600  INFO [devops,,] 24836 --- [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dd653822-1e09-3a59-b838-f7e559c5d467  
+Apr 09 11:29:40 DESKTOP-235VIH4  11:29:40.045  INFO [devops,,] 24836 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)  
+Apr 09 11:29:40 DESKTOP-235VIH4  11:29:40.065  INFO [devops,,] 24836 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]  
+Apr 09 11:29:40 DESKTOP-235VIH4  11:29:40.066  INFO [devops,,] 24836 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]  
+Apr 09 11:29:41 DESKTOP-235VIH4  11:29:40.283  INFO [devops,,] 24836 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext  
+Apr 09 11:29:41 DESKTOP-235VIH4  11:29:40.284  INFO [devops,,] 24836 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4443 ms  
+Apr 09 11:29:41 DESKTOP-235VIH4  11:29:40.736  INFO [devops,,] 24836 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...  
+Apr 09 11:29:41 DESKTOP-235VIH4  11:29:40.940  INFO [devops,,] 24836 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.  
+Apr 09 11:29:41 DESKTOP-235VIH4  11:29:40.964  INFO [devops,,] 24836 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'  
+Apr 09 11:29:43 DESKTOP-235VIH4  11:29:42.678  INFO [devops,,] 24836 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]  
+Apr 09 11:29:43 DESKTOP-235VIH4  11:29:42.708  WARN [devops,,] 24836 --- [pool-1-thread-1] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]  
+Apr 09 11:29:43 DESKTOP-235VIH4  11:29:42.744  INFO [devops,,] 24836 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final  
+Apr 09 11:29:43 DESKTOP-235VIH4  11:29:42.956  INFO [devops,,] 24836 --- [  restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}  
+Apr 09 11:29:44 DESKTOP-235VIH4  11:29:43.103  INFO [devops,,] 24836 --- [  restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect  
+Apr 09 11:29:44 DESKTOP-235VIH4  11:29:43.860  INFO [devops,,] 24836 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]  
+Apr 09 11:29:44 DESKTOP-235VIH4  11:29:43.882  INFO [devops,,] 24836 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'  
+Apr 09 11:29:45 DESKTOP-235VIH4  11:29:44.994  WARN [devops,,] 24836 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning  
+Apr 09 11:29:47 DESKTOP-235VIH4  11:29:46.262  INFO [devops,,] 24836 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729  
+Apr 09 11:29:48 DESKTOP-235VIH4  11:29:47.205  INFO [devops,,] 24836 --- [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'  
+Apr 09 11:29:48 DESKTOP-235VIH4  11:29:47.367  INFO [devops,,] 24836 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''  
+Apr 09 11:29:48 DESKTOP-235VIH4  11:29:47.741  INFO [devops,,] 24836 --- [  restartedMain] c.i.projeto.devops.DevopsApplication     : Started DevopsApplication in 13.271 seconds (JVM running for 15.713)  
+Apr 09 11:29:49 DESKTOP-235VIH4  11:29:48.488  INFO [devops,,] 24836 --- [)-192.168.31.23] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'  
+Apr 09 11:29:49 DESKTOP-235VIH4  11:29:48.489  INFO [devops,,] 24836 --- [)-192.168.31.23] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'  
+Apr 09 11:29:49 DESKTOP-235VIH4  11:29:48.494  INFO [devops,,] 24836 --- [)-192.168.31.23] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms  
+Apr 09 11:35:18 DESKTOP-235VIH4  11:35:17.698  INFO [devops,,] 24836 --- [       Thread-6] o.s.c.s.a.z.ZipkinAutoConfiguration      : Flushing remaining spans on shutdown  
+Apr 09 11:35:18 DESKTOP-235VIH4  11:35:17.960  INFO [devops,,] 24836 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'  
+Apr 09 11:35:18 DESKTOP-235VIH4  11:35:17.961  INFO [devops,,] 24836 --- [ionShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'  
+Apr 09 11:35:19 DESKTOP-235VIH4  11:35:18.187  WARN [devops,,] 24836 --- [ionShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]  
+Apr 09 11:35:20 DESKTOP-235VIH4  11:35:19.202  INFO [devops,,] 24836 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...  
+Apr 09 11:35:20 DESKTOP-235VIH4  11:35:19.207  INFO [devops,,] 24836 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.  
+Apr 09 11:35:31 DESKTOP-235VIH4  11:35:31.075  INFO [devops,,] 7716 --- [  restartedMain] c.i.projeto.devops.DevopsApplication     : Starting DevopsApplication using Java 11.0.12 on DESKTOP-235VIH4 with PID 7716 (C:\Users\JulioSilva\Documents\INFNET\devops\target\classes started by JulioSilva in C:\Users\JulioSilva\Documents\INFNET\devops)  
+Apr 09 11:35:31 DESKTOP-235VIH4  11:35:31.084  INFO [devops,,] 7716 --- [  restartedMain] c.i.projeto.devops.DevopsApplication     : No active profile set, falling back to 1 default profile: "default"  
+Apr 09 11:35:32 DESKTOP-235VIH4  11:35:31.155  INFO [devops,,] 7716 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable  
+Apr 09 11:35:32 DESKTOP-235VIH4  11:35:31.156  INFO [devops,,] 7716 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'  
+Apr 09 11:35:34 DESKTOP-235VIH4  11:35:33.245  INFO [devops,,] 7716 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.  
+Apr 09 11:35:34 DESKTOP-235VIH4  11:35:33.330  INFO [devops,,] 7716 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interfaces.  
+Apr 09 11:35:34 DESKTOP-235VIH4  11:35:33.900  INFO [devops,,] 7716 --- [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dd653822-1e09-3a59-b838-f7e559c5d467  
+Apr 09 11:35:36 DESKTOP-235VIH4  11:35:35.495  INFO [devops,,] 7716 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)  
+Apr 09 11:35:36 DESKTOP-235VIH4  11:35:35.508  INFO [devops,,] 7716 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]  
+Apr 09 11:35:36 DESKTOP-235VIH4  11:35:35.509  INFO [devops,,] 7716 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]  
+Apr 09 11:35:36 DESKTOP-235VIH4  11:35:35.685  INFO [devops,,] 7716 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext  
+Apr 09 11:35:36 DESKTOP-235VIH4  11:35:35.686  INFO [devops,,] 7716 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4529 ms  
+Apr 09 11:35:37 DESKTOP-235VIH4  11:35:36.150  INFO [devops,,] 7716 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...  
+Apr 09 11:35:37 DESKTOP-235VIH4  11:35:36.348  INFO [devops,,] 7716 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.  
+Apr 09 11:35:37 DESKTOP-235VIH4  11:35:36.371  INFO [devops,,] 7716 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'  
+Apr 09 11:35:39 DESKTOP-235VIH4  11:35:38.124  WARN [devops,,] 7716 --- [pool-1-thread-1] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]  
+Apr 09 11:35:39 DESKTOP-235VIH4  11:35:38.183  INFO [devops,,] 7716 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]  
+Apr 09 11:35:39 DESKTOP-235VIH4  11:35:38.275  INFO [devops,,] 7716 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final  
+Apr 09 11:35:39 DESKTOP-235VIH4  11:35:38.532  INFO [devops,,] 7716 --- [  restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}  
+Apr 09 11:35:39 DESKTOP-235VIH4  11:35:38.717  INFO [devops,,] 7716 --- [  restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect  
+Apr 09 11:35:40 DESKTOP-235VIH4  11:35:39.577  INFO [devops,,] 7716 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]  
+Apr 09 11:35:40 DESKTOP-235VIH4  11:35:39.597  INFO [devops,,] 7716 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'  
+Apr 09 11:35:41 DESKTOP-235VIH4  11:35:40.788  WARN [devops,,] 7716 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning  
+Apr 09 11:35:43 DESKTOP-235VIH4  11:35:42.134  INFO [devops,,] 7716 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729  
+Apr 09 11:35:44 DESKTOP-235VIH4  11:35:43.118  INFO [devops,,] 7716 --- [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'  
+Apr 09 11:35:44 DESKTOP-235VIH4  11:35:43.295  INFO [devops,,] 7716 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''  
+Apr 09 11:35:44 DESKTOP-235VIH4  11:35:43.701  INFO [devops,,] 7716 --- [  restartedMain] c.i.projeto.devops.DevopsApplication     : Started DevopsApplication in 13.948 seconds (JVM running for 16.227)  
+Apr 09 11:35:45 DESKTOP-235VIH4  11:35:44.639  INFO [devops,,] 7716 --- [)-192.168.31.23] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'  
+Apr 09 11:35:45 DESKTOP-235VIH4  11:35:44.640  INFO [devops,,] 7716 --- [)-192.168.31.23] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'  
+Apr 09 11:35:45 DESKTOP-235VIH4  11:35:44.646  INFO [devops,,] 7716 --- [)-192.168.31.23] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms  
+Apr 09 11:38:49 DESKTOP-235VIH4  11:38:48.732  INFO [devops,,] 7716 --- [       Thread-6] o.s.c.s.a.z.ZipkinAutoConfiguration      : Flushing remaining spans on shutdown  
+Apr 09 11:46:30 DESKTOP-235VIH4  11:46:26.759  INFO [devops,,] 9720 --- [  restartedMain] c.i.projeto.devops.DevopsApplication     : Starting DevopsApplication using Java 11.0.12 on DESKTOP-235VIH4 with PID 9720 (C:\Users\JulioSilva\Documents\INFNET\devops\target\classes started by JulioSilva in C:\Users\JulioSilva\Documents\INFNET\devops)  
+Apr 09 11:46:30 DESKTOP-235VIH4  11:46:26.770  INFO [devops,,] 9720 --- [  restartedMain] c.i.projeto.devops.DevopsApplication     : No active profile set, falling back to 1 default profile: "default"  
+Apr 09 11:46:30 DESKTOP-235VIH4  11:46:26.853  INFO [devops,,] 9720 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable  
+Apr 09 11:46:30 DESKTOP-235VIH4  11:46:26.854  INFO [devops,,] 9720 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'  
+Apr 09 11:46:32 DESKTOP-235VIH4  11:46:29.017  INFO [devops,,] 9720 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.  
+Apr 09 11:46:32 DESKTOP-235VIH4  11:46:29.087  INFO [devops,,] 9720 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interfaces.  
+Apr 09 11:46:33 DESKTOP-235VIH4  11:46:29.785  INFO [devops,,] 9720 --- [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dd653822-1e09-3a59-b838-f7e559c5d467  
+Apr 09 11:46:34 DESKTOP-235VIH4  11:46:31.465  INFO [devops,,] 9720 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)  
+Apr 09 11:46:34 DESKTOP-235VIH4  11:46:31.487  INFO [devops,,] 9720 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]  
+Apr 09 11:46:34 DESKTOP-235VIH4  11:46:31.488  INFO [devops,,] 9720 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]  
+Apr 09 11:46:35 DESKTOP-235VIH4  11:46:31.728  INFO [devops,,] 9720 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext  
+Apr 09 11:46:35 DESKTOP-235VIH4  11:46:31.729  INFO [devops,,] 9720 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4873 ms  
+Apr 09 11:46:35 DESKTOP-235VIH4  11:46:32.216  INFO [devops,,] 9720 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...  
+Apr 09 11:46:35 DESKTOP-235VIH4  11:46:32.481  INFO [devops,,] 9720 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.  
+Apr 09 11:46:35 DESKTOP-235VIH4  11:46:32.501  INFO [devops,,] 9720 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'  
+Apr 09 11:46:37 DESKTOP-235VIH4  11:46:34.470  WARN [devops,,] 9720 --- [pool-1-thread-1] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]  
+Apr 09 11:46:38 DESKTOP-235VIH4  11:46:35.029  INFO [devops,,] 9720 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]  
+Apr 09 11:46:38 DESKTOP-235VIH4  11:46:35.123  INFO [devops,,] 9720 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final  
+Apr 09 11:46:38 DESKTOP-235VIH4  11:46:35.392  INFO [devops,,] 9720 --- [  restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}  
+Apr 09 11:46:38 DESKTOP-235VIH4  11:46:35.572  INFO [devops,,] 9720 --- [  restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect  
+Apr 09 11:46:39 DESKTOP-235VIH4  11:46:36.567  INFO [devops,,] 9720 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]  
+Apr 09 11:46:39 DESKTOP-235VIH4  11:46:36.587  INFO [devops,,] 9720 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'  
+Apr 09 11:46:40 DESKTOP-235VIH4  11:46:37.621  WARN [devops,,] 9720 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning  
+Apr 09 11:46:42 DESKTOP-235VIH4  11:46:39.032  INFO [devops,,] 9720 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729  
+Apr 09 11:46:43 DESKTOP-235VIH4  11:46:40.003  INFO [devops,,] 9720 --- [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'  
+Apr 09 11:46:43 DESKTOP-235VIH4  11:46:40.187  INFO [devops,,] 9720 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''  
+Apr 09 11:46:43 DESKTOP-235VIH4  11:46:40.604  INFO [devops,,] 9720 --- [  restartedMain] c.i.projeto.devops.DevopsApplication     : Started DevopsApplication in 15.608 seconds (JVM running for 19.585)  
+Apr 09 11:46:45 DESKTOP-235VIH4  11:46:41.663  INFO [devops,,] 9720 --- [)-192.168.31.23] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'  
+Apr 09 11:46:45 DESKTOP-235VIH4  11:46:41.664  INFO [devops,,] 9720 --- [)-192.168.31.23] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'  
+Apr 09 11:46:45 DESKTOP-235VIH4  11:46:41.669  INFO [devops,,] 9720 --- [)-192.168.31.23] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms  
+Apr 09 12:13:12 DESKTOP-235VIH4  12:13:09.351  INFO [devops,49762bec74c9a2f4,49762bec74c9a2f4] 9720 --- [nio-8080-exec-1] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 359 ms  
+Apr 09 12:13:14 DESKTOP-235VIH4  12:13:10.956  WARN [devops,,] 9720 --- [/api/v2/spans}}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.  
+Apr 09 12:13:14 DESKTOP-235VIH4 org.springframework.web.client.ResourceAccessException I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out
+Apr 09 12:13:14 DESKTOP-235VIH4 at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+Apr 09 12:13:14 DESKTOP-235VIH4 at org.springframework.cloud.sleuth.zipkin2.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateWrapper.java:67)
+Apr 09 12:13:14 DESKTOP-235VIH4 at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:666)
+Apr 09 12:13:14 DESKTOP-235VIH4 at org.springframework.cloud.sleuth.zipkin2.RestTemplateSender.post(RestTemplateSender.java:51)
+Apr 09 12:13:14 DESKTOP-235VIH4 at org.springframework.cloud.sleuth.zipkin2.RestTemplateSender.lambda$new$0(RestTemplateSender.java:44)
+Apr 09 12:13:14 DESKTOP-235VIH4 at org.springframework.cloud.sleuth.zipkin2.HttpSender.post(HttpSender.java:137)
+Apr 09 12:13:14 DESKTOP-235VIH4 at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:150)
+Apr 09 12:13:14 DESKTOP-235VIH4  12:13:10.960  WARN [devops,,] 9720 --- [/api/v2/spans}}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 2 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out)    org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out  	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)  	at org.springframework.cloud.sleuth.zipkin2.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateWrapper.java:67)  	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:666)  	at org.springframework.cloud.sleuth.zipkin2.RestTemplateSender.post(RestTemplateSender.java:51)  	at org.springframework.cloud.sleuth.zipkin2.RestTemplateSender.lambda$new$0(RestTemplateSender.java:44)  	at org.springframework.cloud.sleuth.zipkin2.HttpSender.post(HttpSender.java:137)  	at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:150)  	at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:140)  	at zipkin2.Call$Base.execute(Call.java:391)  	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299)  	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378)  	at java.base/java.lang.Thread.run(Thread.java:834)  Caused by: java.net.SocketTimeoutException: connect timed out  	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)  	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)  	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)  	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)  	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)  	at java.base/java.net.Socket.connect(Socket.java:608)  	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)  	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474)  	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569)  	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242)  	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341)  	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362)  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1253)  	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1187)  	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1081)  	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1015)  	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)  	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)  	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)  	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)  	... 11 common frames omitted    
+Apr 09 12:13:14 DESKTOP-235VIH4 at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:140)
+Apr 09 12:13:14 DESKTOP-235VIH4 at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)
+Apr 09 12:13:14 DESKTOP-235VIH4 at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474)
+Apr 09 12:13:14 DESKTOP-235VIH4 at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569)
+Apr 09 12:13:14 DESKTOP-235VIH4 at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+Apr 09 12:13:14 DESKTOP-235VIH4 at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341)
+Apr 09 12:13:14 DESKTOP-235VIH4 at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362)
+Apr 09 12:13:14 DESKTOP-235VIH4 at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1253)
+Apr 09 12:13:14 DESKTOP-235VIH4 at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1187)
+Apr 09 12:13:14 DESKTOP-235VIH4 at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1081)
+Apr 09 12:13:14 DESKTOP-235VIH4 at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1015)
+Apr 09 12:13:14 DESKTOP-235VIH4 at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
+Apr 09 12:13:14 DESKTOP-235VIH4 at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+Apr 09 12:13:14 DESKTOP-235VIH4 at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+Apr 09 12:13:14 DESKTOP-235VIH4 at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+Apr 09 12:13:14 DESKTOP-235VIH4 at org.springframework.cloud.sleuth.zipkin2.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateWrapper.java:67)
+Apr 09 12:13:14 DESKTOP-235VIH4 at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:666)
+Apr 09 12:13:14 DESKTOP-235VIH4 at org.springframework.cloud.sleuth.zipkin2.RestTemplateSender.post(RestTemplateSender.java:51)
+Apr 09 12:13:14 DESKTOP-235VIH4 at org.springframework.cloud.sleuth.zipkin2.RestTemplateSender.lambda$new$0(RestTemplateSender.java:44)
+Apr 09 12:13:14 DESKTOP-235VIH4 at org.springframework.cloud.sleuth.zipkin2.HttpSender.post(HttpSender.java:137)
+Apr 09 12:13:14 DESKTOP-235VIH4 at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:150)
+Apr 09 12:13:14 DESKTOP-235VIH4 at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:140)
+Apr 09 12:13:14 DESKTOP-235VIH4 at zipkin2.Call$Base.execute(Call.java:391)
+Apr 09 12:13:14 DESKTOP-235VIH4 at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299)
+Apr 09 12:13:14 DESKTOP-235VIH4 at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378)
+Apr 09 12:13:14 DESKTOP-235VIH4 at java.base/java.lang.Thread.run(Thread.java:834)
+Apr 09 12:13:14 DESKTOP-235VIH4 at zipkin2.Call$Base.execute(Call.java:391)
+Apr 09 12:13:14 DESKTOP-235VIH4 at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299)
+Apr 09 12:13:14 DESKTOP-235VIH4 at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378)
+Apr 09 12:13:14 DESKTOP-235VIH4 at java.base/java.lang.Thread.run(Thread.java:834)
+Apr 09 12:13:14 DESKTOP-235VIH4 Caused by: java.net.SocketTimeoutException: connect timed out
+Apr 09 12:13:14 DESKTOP-235VIH4 at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+Apr 09 12:13:14 DESKTOP-235VIH4 at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+Apr 09 12:13:14 DESKTOP-235VIH4 at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+Apr 09 12:13:14 DESKTOP-235VIH4 at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+Apr 09 12:13:14 DESKTOP-235VIH4 at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+Apr 09 12:13:14 DESKTOP-235VIH4 at java.base/java.net.Socket.connect(Socket.java:608)
+Apr 09 12:13:42 DESKTOP-235VIH4  12:13:39.356  INFO [devops,c689a9c0501e8e7a,c689a9c0501e8e7a] 9720 --- [nio-8080-exec-6] c.i.p.devops.service.UsuarioService      : Salvando Usuário: Usuario(id=1, nome=string, altura=0.0, peso=0.0, idade=0)  
+Apr 09 12:14:08 DESKTOP-235VIH4  12:14:04.788  INFO [devops,,] 9720 --- [       Thread-6] o.s.c.s.a.z.ZipkinAutoConfiguration      : Flushing remaining spans on shutdown  
+Apr 09 12:14:08 DESKTOP-235VIH4  12:14:05.037  INFO [devops,,] 9720 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'  
+Apr 09 12:14:08 DESKTOP-235VIH4  12:14:05.038  INFO [devops,,] 9720 --- [ionShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'  
+Apr 09 12:14:08 DESKTOP-235VIH4  12:14:05.264  WARN [devops,,] 9720 --- [ionShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]  
+Apr 09 12:14:18 DESKTOP-235VIH4  12:14:15.301  INFO [devops,,] 20844 --- [  restartedMain] c.i.projeto.devops.DevopsApplication     : Starting DevopsApplication using Java 11.0.12 on DESKTOP-235VIH4 with PID 20844 (C:\Users\JulioSilva\Documents\INFNET\devops\target\classes started by JulioSilva in C:\Users\JulioSilva\Documents\INFNET\devops)  
+Apr 09 12:14:18 DESKTOP-235VIH4  12:14:15.311  INFO [devops,,] 20844 --- [  restartedMain] c.i.projeto.devops.DevopsApplication     : No active profile set, falling back to 1 default profile: "default"  
+Apr 09 12:14:18 DESKTOP-235VIH4  12:14:15.386  INFO [devops,,] 20844 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable  
+Apr 09 12:14:18 DESKTOP-235VIH4  12:14:15.387  INFO [devops,,] 20844 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'  
+Apr 09 12:14:20 DESKTOP-235VIH4  12:14:17.562  INFO [devops,,] 20844 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.  
+Apr 09 12:14:20 DESKTOP-235VIH4  12:14:17.637  INFO [devops,,] 20844 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interfaces.  
+Apr 09 12:14:21 DESKTOP-235VIH4  12:14:18.262  INFO [devops,,] 20844 --- [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dd653822-1e09-3a59-b838-f7e559c5d467  
+Apr 09 12:14:23 DESKTOP-235VIH4  12:14:19.684  INFO [devops,,] 20844 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)  
+Apr 09 12:14:23 DESKTOP-235VIH4  12:14:19.704  INFO [devops,,] 20844 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]  
+Apr 09 12:14:23 DESKTOP-235VIH4  12:14:19.705  INFO [devops,,] 20844 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]  
+Apr 09 12:14:23 DESKTOP-235VIH4  12:14:20.044  INFO [devops,,] 20844 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext  
+Apr 09 12:14:23 DESKTOP-235VIH4  12:14:20.045  INFO [devops,,] 20844 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4657 ms  
+Apr 09 12:14:23 DESKTOP-235VIH4  12:14:20.453  INFO [devops,,] 20844 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...  
+Apr 09 12:14:23 DESKTOP-235VIH4  12:14:20.674  INFO [devops,,] 20844 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.  
+Apr 09 12:14:24 DESKTOP-235VIH4  12:14:20.707  INFO [devops,,] 20844 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'  
+Apr 09 12:14:25 DESKTOP-235VIH4  12:14:22.473  WARN [devops,,] 20844 --- [pool-1-thread-1] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]  
+Apr 09 12:14:25 DESKTOP-235VIH4  12:14:22.664  INFO [devops,,] 20844 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]  
+Apr 09 12:14:26 DESKTOP-235VIH4  12:14:22.759  INFO [devops,,] 20844 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final  
+Apr 09 12:14:26 DESKTOP-235VIH4  12:14:23.005  INFO [devops,,] 20844 --- [  restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}  
+Apr 09 12:14:26 DESKTOP-235VIH4  12:14:23.146  INFO [devops,,] 20844 --- [  restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect  
+Apr 09 12:14:27 DESKTOP-235VIH4  12:14:23.908  INFO [devops,,] 20844 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]  
+Apr 09 12:14:27 DESKTOP-235VIH4  12:14:23.925  INFO [devops,,] 20844 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'  
+Apr 09 12:14:28 DESKTOP-235VIH4  12:14:24.958  WARN [devops,,] 20844 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning  
+Apr 09 12:14:29 DESKTOP-235VIH4  12:14:26.230  INFO [devops,,] 20844 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729  
+Apr 09 12:14:30 DESKTOP-235VIH4  12:14:27.427  INFO [devops,,] 20844 --- [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'  
+Apr 09 12:14:30 DESKTOP-235VIH4  12:14:27.616  INFO [devops,,] 20844 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''  
+Apr 09 12:14:31 DESKTOP-235VIH4  12:14:28.061  INFO [devops,,] 20844 --- [  restartedMain] c.i.projeto.devops.DevopsApplication     : Started DevopsApplication in 14.143 seconds (JVM running for 17.168)  
+Apr 09 12:14:32 DESKTOP-235VIH4  12:14:28.687  INFO [devops,,] 20844 --- [)-192.168.31.23] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'  
+Apr 09 12:14:32 DESKTOP-235VIH4  12:14:28.688  INFO [devops,,] 20844 --- [)-192.168.31.23] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'  
+Apr 09 12:14:32 DESKTOP-235VIH4  12:14:28.692  INFO [devops,,] 20844 --- [)-192.168.31.23] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms  
+Apr 09 12:15:00 DESKTOP-235VIH4  12:14:57.132  INFO [devops,,] 20844 --- [       Thread-6] o.s.c.s.a.z.ZipkinAutoConfiguration      : Flushing remaining spans on shutdown  
+Apr 09 12:15:00 DESKTOP-235VIH4  12:14:57.388  INFO [devops,,] 20844 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'  
+Apr 09 12:15:00 DESKTOP-235VIH4  12:14:57.389  INFO [devops,,] 20844 --- [ionShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'  
+Apr 09 12:15:00 DESKTOP-235VIH4  12:14:57.635  WARN [devops,,] 20844 --- [ionShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]  
+Apr 09 12:15:01 DESKTOP-235VIH4  12:14:58.652  INFO [devops,,] 20844 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...  
+Apr 09 12:15:01 DESKTOP-235VIH4  12:14:58.658  INFO [devops,,] 20844 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.  
+Apr 09 12:52:05 DESKTOP-235VIH4  12:52:02.038  INFO [devops,,] 23516 --- [  restartedMain] c.i.projeto.devops.DevopsApplication     : Starting DevopsApplication using Java 11.0.12 on DESKTOP-235VIH4 with PID 23516 (C:\Users\JulioSilva\Documents\INFNET\devops\target\classes started by JulioSilva in C:\Users\JulioSilva\Documents\INFNET\devops)  
+Apr 09 12:52:05 DESKTOP-235VIH4  12:52:02.048  INFO [devops,,] 23516 --- [  restartedMain] c.i.projeto.devops.DevopsApplication     : No active profile set, falling back to 1 default profile: "default"  
+Apr 09 12:52:05 DESKTOP-235VIH4  12:52:02.118  INFO [devops,,] 23516 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable  
+Apr 09 12:52:05 DESKTOP-235VIH4  12:52:02.118  INFO [devops,,] 23516 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'  
+Apr 09 12:52:07 DESKTOP-235VIH4  12:52:04.233  INFO [devops,,] 23516 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.  
+Apr 09 12:52:07 DESKTOP-235VIH4  12:52:04.301  INFO [devops,,] 23516 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.  
+Apr 09 12:52:08 DESKTOP-235VIH4  12:52:04.908  INFO [devops,,] 23516 --- [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dd653822-1e09-3a59-b838-f7e559c5d467  
+Apr 09 12:52:09 DESKTOP-235VIH4  12:52:06.424  INFO [devops,,] 23516 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)  
+Apr 09 12:52:09 DESKTOP-235VIH4  12:52:06.442  INFO [devops,,] 23516 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]  
+Apr 09 12:52:09 DESKTOP-235VIH4  12:52:06.443  INFO [devops,,] 23516 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]  
+Apr 09 12:52:09 DESKTOP-235VIH4  12:52:06.677  INFO [devops,,] 23516 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext  
+Apr 09 12:52:09 DESKTOP-235VIH4  12:52:06.678  INFO [devops,,] 23516 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4558 ms  
+Apr 09 12:52:10 DESKTOP-235VIH4  12:52:07.178  INFO [devops,,] 23516 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...  
+Apr 09 12:52:10 DESKTOP-235VIH4  12:52:07.406  INFO [devops,,] 23516 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.  
+Apr 09 12:52:10 DESKTOP-235VIH4  12:52:07.426  INFO [devops,,] 23516 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'  
+Apr 09 12:52:12 DESKTOP-235VIH4  12:52:09.279  INFO [devops,,] 23516 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]  
+Apr 09 12:52:12 DESKTOP-235VIH4  12:52:09.351  INFO [devops,,] 23516 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final  
+Apr 09 12:52:12 DESKTOP-235VIH4  12:52:09.584  INFO [devops,,] 23516 --- [  restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}  
+Apr 09 12:52:12 DESKTOP-235VIH4  12:52:09.721  INFO [devops,,] 23516 --- [  restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect  
+Apr 09 12:52:13 DESKTOP-235VIH4  12:52:10.493  INFO [devops,,] 23516 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]  
+Apr 09 12:52:13 DESKTOP-235VIH4  12:52:10.506  INFO [devops,,] 23516 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'  
+Apr 09 12:52:14 DESKTOP-235VIH4  12:52:11.640  WARN [devops,,] 23516 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning  
+Apr 09 12:52:16 DESKTOP-235VIH4  12:52:12.919  INFO [devops,,] 23516 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729  
+Apr 09 12:52:17 DESKTOP-235VIH4  12:52:13.944  INFO [devops,,] 23516 --- [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'  
+Apr 09 12:52:17 DESKTOP-235VIH4  12:52:14.106  INFO [devops,,] 23516 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''  
+Apr 09 12:52:17 DESKTOP-235VIH4  12:52:14.331  INFO [devops,87637e45f5ff4d74,87637e45f5ff4d74] 23516 --- [nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'  
+Apr 09 12:52:17 DESKTOP-235VIH4  12:52:14.333  INFO [devops,87637e45f5ff4d74,87637e45f5ff4d74] 23516 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'  
+Apr 09 12:52:17 DESKTOP-235VIH4  12:52:14.339  INFO [devops,87637e45f5ff4d74,87637e45f5ff4d74] 23516 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms  
+Apr 09 12:52:17 DESKTOP-235VIH4  12:52:14.607  INFO [devops,,] 23516 --- [  restartedMain] c.i.projeto.devops.DevopsApplication     : Started DevopsApplication in 13.883 seconds (JVM running for 16.458)  
+Apr 09 12:52:36 DESKTOP-235VIH4  12:52:33.614  INFO [devops,f31b87356a4a1ad5,f31b87356a4a1ad5] 23516 --- [nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 359 ms  
+Apr 09 13:00:46 DESKTOP-235VIH4  13:00:43.182  INFO [devops,b199552efd88aeb4,b199552efd88aeb4] 23516 --- [nio-8080-exec-6] c.i.p.devops.service.UsuarioService      : Salvando Usuário: Usuario(id=1, nome=string, altura=1.0, peso=1.0, idade=1)  
+Apr 09 13:01:17 DESKTOP-235VIH4  13:01:14.303  INFO [devops,3b9090bc77906a18,3b9090bc77906a18] 23516 --- [io-8080-exec-10] c.i.p.devops.service.UsuarioService      : Salvando Usuário: Usuario(id=2, nome=string, altura=1.0, peso=1.0, idade=1)  
+Apr 09 13:01:18 DESKTOP-235VIH4  13:01:14.973  INFO [devops,e3494d849bcbc08b,e3494d849bcbc08b] 23516 --- [nio-8080-exec-1] c.i.p.devops.service.UsuarioService      : Salvando Usuário: Usuario(id=3, nome=string, altura=1.0, peso=1.0, idade=1)  
+Apr 09 13:01:18 DESKTOP-235VIH4  13:01:15.433  INFO [devops,ae7e6880cf9acda0,ae7e6880cf9acda0] 23516 --- [nio-8080-exec-2] c.i.p.devops.service.UsuarioService      : Salvando Usuário: Usuario(id=4, nome=string, altura=1.0, peso=1.0, idade=1)  
+Apr 09 13:01:19 DESKTOP-235VIH4  13:01:15.880  INFO [devops,b28e56693413eeb5,b28e56693413eeb5] 23516 --- [nio-8080-exec-4] c.i.p.devops.service.UsuarioService      : Salvando Usuário: Usuario(id=5, nome=string, altura=1.0, peso=1.0, idade=1)  
+Apr 09 13:01:19 DESKTOP-235VIH4  13:01:16.295  INFO [devops,7b2ea7e3cc122f1e,7b2ea7e3cc122f1e] 23516 --- [nio-8080-exec-6] c.i.p.devops.service.UsuarioService      : Salvando Usuário: Usuario(id=6, nome=string, altura=1.0, peso=1.0, idade=1)  
+Apr 09 13:01:33 DESKTOP-235VIH4  13:01:30.158  INFO [devops,cba0f77cef0d469f,cba0f77cef0d469f] 23516 --- [io-8080-exec-10] c.i.p.devops.service.UsuarioService      : Lista de Usuários: [Usuario(id=1, nome=string, altura=1.0, peso=1.0, idade=1), Usuario(id=2, nome=string, altura=1.0, peso=1.0, idade=1), Usuario(id=3, nome=string, altura=1.0, peso=1.0, idade=1), Usuario(id=4, nome=string, altura=1.0, peso=1.0, idade=1), Usuario(id=5, nome=string, altura=1.0, peso=1.0, idade=1), Usuario(id=6, nome=string, altura=1.0, peso=1.0, idade=1)]  
+Apr 09 13:01:49 DESKTOP-235VIH4  13:01:45.989  INFO [devops,2c670f04cbac5b7e,2c670f04cbac5b7e] 23516 --- [nio-8080-exec-7] c.i.p.devops.service.UsuarioService      : Removendo Usuário Por Id: 5  
+Apr 09 13:01:56 DESKTOP-235VIH4  13:01:53.742  INFO [devops,fa37e943680e3c7e,fa37e943680e3c7e] 23516 --- [nio-8080-exec-6] c.i.p.devops.service.UsuarioService      : Calculando IMC: IMC(imc=1.0, categoria=Abaixo do Peso)  
+Apr 09 13:02:30 DESKTOP-235VIH4  13:02:27.489  INFO [devops,77a5c8650968c1a2,77a5c8650968c1a2] 23516 --- [nio-8080-exec-1] c.i.p.devops.service.UsuarioService      : Atualizando Usuário: Usuario(id=3, nome=string, altura=2.0, peso=3.0, idade=4)  
+Apr 09 13:05:13 DESKTOP-235VIH4 org.hibernate.ObjectNotFoundException No row with the given identifier exists: [com.infnet.projeto.devops.entity.Usuario#Usuario Não Encontrado]
+Apr 09 13:05:13 DESKTOP-235VIH4 at com.infnet.projeto.devops.dao.Impl.UsuarioDAOImpl.lambda$buscarPorId$0(UsuarioDAOImpl.java:26)
+Apr 09 13:05:13 DESKTOP-235VIH4 at java.base/java.util.Optional.orElseThrow(Optional.java:408)
+Apr 09 13:05:13 DESKTOP-235VIH4 at com.infnet.projeto.devops.dao.Impl.UsuarioDAOImpl.buscarPorId(UsuarioDAOImpl.java:26)
+Apr 09 13:05:13 DESKTOP-235VIH4 at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:931)
+Apr 09 13:05:13 DESKTOP-235VIH4 at javax.servlet.http.HttpServlet.service(HttpServlet.java:534)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+Apr 09 13:05:13 DESKTOP-235VIH4 at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:68)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.springframework.cloud.sleuth.autoconfig.instrument.web.TraceWebServletConfiguration$LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:131)
+Apr 09 13:05:13 DESKTOP-235VIH4 at com.infnet.projeto.devops.dao.Impl.UsuarioDAOImpl.remover(UsuarioDAOImpl.java:34)
+Apr 09 13:05:13 DESKTOP-235VIH4 at com.infnet.projeto.devops.service.UsuarioService.remover(UsuarioService.java:48)
+Apr 09 13:05:13 DESKTOP-235VIH4 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+Apr 09 13:05:13 DESKTOP-235VIH4 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+Apr 09 13:05:13 DESKTOP-235VIH4 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.springframework.cloud.sleuth.instrument.web.tomcat.TraceValve.invoke(TraceValve.java:103)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+Apr 09 13:05:13 DESKTOP-235VIH4 at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+Apr 09 13:05:13 DESKTOP-235VIH4 at java.base/java.lang.Thread.run(Thread.java:834)
+Apr 09 13:09:31 DESKTOP-235VIH4  13:09:28.279  INFO [devops,949df652eed0cc8d,949df652eed0cc8d] 23516 --- [nio-8080-exec-5] c.i.p.devops.service.UsuarioService      : Lista de Usuários: [Usuario(id=1, nome=string, altura=1.0, peso=1.0, idade=1), Usuario(id=2, nome=string, altura=1.0, peso=1.0, idade=1), Usuario(id=3, nome=string, altura=2.0, peso=3.0, idade=4), Usuario(id=4, nome=string, altura=1.0, peso=1.0, idade=1), Usuario(id=6, nome=string, altura=1.0, peso=1.0, idade=1)]  
+Apr 09 13:21:19 DESKTOP-235VIH4  13:21:15.842  INFO [devops,5630947aaa3ad492,5630947aaa3ad492] 23516 --- [nio-8080-exec-2] c.i.p.devops.service.UsuarioService      : Lista de Usuários: [Usuario(id=1, nome=string, altura=1.0, peso=1.0, idade=1), Usuario(id=2, nome=string, altura=1.0, peso=1.0, idade=1), Usuario(id=3, nome=string, altura=2.0, peso=3.0, idade=4), Usuario(id=4, nome=string, altura=1.0, peso=1.0, idade=1), Usuario(id=6, nome=string, altura=1.0, peso=1.0, idade=1)]  
