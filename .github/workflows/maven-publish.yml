@@ -30,4 +30,4 @@ jobs:
     needs: build
     steps:
       - name: Aprovação do Revisor
-      - run: echo Aprovado pelo Revisor.
+        run: echo Aprovado pelo Revisor.
