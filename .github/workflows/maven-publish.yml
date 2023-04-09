@@ -23,7 +23,7 @@ jobs:
       run: mvn -B package --file pom.xml
       
     - name: Testando class 
-      run: java -cp java src/test/java/com/infnet/projeto/devops/UsuarioServiceTest.java
+      run: java -cp java src/test/java/com/infnet/projeto/devops/DevopsApplicationTests.java
 
   
   deploy-prod:
