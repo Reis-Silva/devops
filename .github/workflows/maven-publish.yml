@@ -26,8 +26,8 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: prod
-      url: https://github.com/Reis-Silva
+      url: https://github.com/Reis-Silva/devops/actions
     needs: build
     steps:
       - name: Aprovação do Revisor
-        run: Aguardar Aprovação do Revisor
+      - run: echo Aprovado pelo Revisor.
