@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+import java.util.Optional;
 
 
 @Service
@@ -22,8 +22,14 @@ public class UsuarioDAOImpl {
     }
 
     public Usuario buscarPorId(Long id){
-        return usuarioDAO.findById(id)
-                .orElseThrow(() -> new ObjectNotFoundException("Usuario Não Encontrado", Usuario.class.getName()));
+
+        Optional<Usuario> usuarioTemp = usuarioDAO.findById(id);
+
+        if(usuarioTemp.isEmpty()){
+            throw new ObjectNotFoundException("Usuario Não Encontrado", Usuario.class.getName());
+        }
+
+        return usuarioTemp.get();
     }
 
     public List<Usuario> listar() {
@@ -31,8 +37,7 @@ public class UsuarioDAOImpl {
     }
 
     public void remover(Long id) {
-        Usuario usuarioTemp = buscarPorId(id);
-        usuarioDAO.deleteById(usuarioTemp.getId());
+        usuarioDAO.deleteById(buscarPorId(id).getId());
     }
 
     public Usuario atualizar(Long id, UsuarioVO usuario) {
