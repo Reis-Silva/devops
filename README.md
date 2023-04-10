@@ -5,7 +5,7 @@
 # Profiles:
 - branch: master -> Requirimento revisor -> prod - Aponta para a base de produção -> releases são criados a partir da nova atualização da branch (Semantic Versioning).
 - branch: main -> Requirimento revisor -> prod - Aponta para a base de homologação.
-- branch: dev -> Sem revisor -> prod - Aponta para a base dos desenvolvedores.
+- branch: dev -> Sem revisor -> Aponta para a base dos desenvolvedores.
 
 - OBS: A partir da branch dev deve ser criada uma nova branch (Em casos particulares a branch main) para desevolver os novos projetos. 
 
