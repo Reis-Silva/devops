@@ -4,7 +4,7 @@
 on:
   push:
     branches:
-      master
+      dev
       
 name: Maven Package
 
@@ -21,13 +21,3 @@ jobs:
         java-version: '11'
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-  
-  deploy-prod:
-    runs-on: ubuntu-latest
-    environment:
-      name: prod
-      url: https://github.com/Reis-Silva/devops/actions
-    needs: build
-    steps:
-      - name: Aprovação do Revisor
-        run: echo Aprovado pelo Revisor.
